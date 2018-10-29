@@ -1,1 +1,1 @@
-json.message "You deleted this"
+json.message "You deleted this author"

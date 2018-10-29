@@ -17,7 +17,7 @@ class Api::AuthorsController < ApplicationController
 
   def update
     @author = Author.find_by(id: params[:id])
-    @author.update(full_name: params[:full_name])
+    @author.full_name = params[:full_name]
     @author.save
     render 'show.json.jbuilder'
   end

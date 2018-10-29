@@ -4,7 +4,7 @@ class Api::BooksController < ApplicationController
     render 'index-book.json.jbuilder'
   end
 
-  def show-book
+  def show
     @book = Book.find_by(id: params[:id])
     render 'show-book.json.jbuilder'
   end
@@ -13,7 +13,7 @@ class Api::BooksController < ApplicationController
     @book = Book.new(
       title: params[:title],
       publisher: params[:genre],
-      book_id: params[:book_id]
+      author_id: params[:author_id]
     )
     @book.save
     render 'show-book.json.jbuilder'

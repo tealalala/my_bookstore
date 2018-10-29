@@ -12,10 +12,10 @@ Rails.application.routes.draw do
 
 
     ## books
-    get '/books' => 'authors#index'
-    get '/books/:id' => 'authors#show'
-    post '/books' => 'authors#create'
-    put '/books/:id' => 'authors#update'
-    get '/books/:id' => 'authors#destroy'
+    get '/books' => 'books#index'
+    get '/books/:id' => 'bookss#show'
+    post '/books' => 'books#create'
+    put '/books/:id' => 'books#update'
+    get '/books/:id' => 'books#destroy'
   end
 end
