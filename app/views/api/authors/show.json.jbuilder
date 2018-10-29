@@ -1,1 +1,1 @@
-json.partial! 'authors.json.jbuilder', author: @author
+json.partial! 'author.json.jbuilder', author: @author
