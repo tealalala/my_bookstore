@@ -1,6 +1,7 @@
 class Api::BooksController < ApplicationController
   def index
-    @books = Book.all
+    books = Book.all
+    @books = Book.all.order('id ASC')
     render 'index-book.json.jbuilder'
   end
 

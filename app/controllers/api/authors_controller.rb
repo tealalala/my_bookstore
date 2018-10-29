@@ -1,6 +1,6 @@
 class Api::AuthorsController < ApplicationController
   def index
-    @authors = Author.all
+    @authors = Author.all.order('id ASC')
     render 'index.json.jbuilder'
   end
 
